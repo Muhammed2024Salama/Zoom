@@ -25,5 +25,5 @@ $zoom = new ZoomIntegrationService($account_id, $client_id, $client_secret);
 $id = 86175169848;
 
 echo '<pre>';
-echo print_r($zoom->getMeeting($id));
+echo print_r($zoom->deleteMeeting($id));
 echo '</pre>';
