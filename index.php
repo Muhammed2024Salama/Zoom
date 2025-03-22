@@ -14,7 +14,7 @@ $zoom = new ZoomIntegrationService($account_id, $client_id, $client_secret);
 $start_time = date('Y-m-d\TH:i:s', strtotime('2024-11-04 17:00'));
 
 $meetingData = [
-    'topic' => 'Create Meeting',
+    'topic' => 'Update Meeting',
     'type' => 2,
     'start_time' => $start_time,
     'duration' => 30,
@@ -25,5 +25,5 @@ $meetingData = [
 $id = 86175169848;
 
 echo '<pre>';
-echo print_r($zoom->createMeeting($meetingData));
+echo print_r($zoom->updateMeeting($id , $meetingData));
 echo '</pre>';
