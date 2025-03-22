@@ -25,9 +25,9 @@ $meetingData = [
 $id = 86175169848;
 
 echo '<pre>';
-echo print_r($zoom->listMeetings(1,1,3), true);
+// echo print_r($zoom->listMeetings(1,1,3), true);
 // echo print_r($zoom->getMeeting($id), true);
 // // echo print_r($zoom->updateMeeting($id, $meetingData), true);
 // // echo print_r($zoom->deleteMeeting($id), true);
-// echo print_r($zoom->createMeeting($meetingData), true);  
+echo print_r($zoom->createMeeting($meetingData), true);  
 echo '</pre>';
